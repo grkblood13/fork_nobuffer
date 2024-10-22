@@ -144,7 +144,7 @@ int execute_command_with_wait(char *command, char *argv[], int waittime_ms) {
 
 		if (!passed) {
 			printf("Received 'checks=fail', restarting the command...\n");
-      fflush(stdout);
+			fflush(stdout);
 			usleep(waittime_ms);
 		}
 	}
